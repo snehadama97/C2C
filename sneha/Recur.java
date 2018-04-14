@@ -1,0 +1,39 @@
+import java.util.*;
+import java.io.*;
+
+class Recur{
+
+     public static int fact(int n){
+            
+            if(n==1){
+                return 1;
+            }
+            else{
+                return (n * fact(n-1));
+            }
+           
+     }
+
+     public static int factit(int n){
+          int f=1 ;
+
+     int i=1;
+         for(i=n;i>0;i--){   
+            f = f*i;
+         }
+         return f;
+     }
+
+
+
+    public static void main(String args[]){
+
+        Scanner sc= new Scanner(System.in);
+        int n = sc.nextInt();
+        fact(n);
+         System.out.println(fact(n));
+          System.out.println(factit(n));
+
+    }
+
+}
